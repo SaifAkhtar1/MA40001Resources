@@ -63,11 +63,17 @@
   // Footer's text font size (in pt).
   footer_text_font_size: "40",
 
+  main-body-font-size: "24",
+
+
   // The poster's content.
   body
 ) = {
+  footer_text_font_size = int(footer_text_font_size) * 1pt
+  main-body-font-size = int(main-body-font-size) * 1pt
+
   // Set the body font.
-  set text(font: "STIX Two Text", size: 16pt)
+  set text(font: "STIX Two Text", size: main-body-font-size)
   let sizes = size.split("x")
   let width = int(sizes.at(0)) * 1in
   let height = int(sizes.at(1)) * 1in
@@ -78,8 +84,6 @@
   univ_logo_column_size = int(univ_logo_column_size) * 1in
   title_column_size = int(title_column_size) * 1in
   footer_url_font_size = int(footer_url_font_size) * 1pt
-  footer_text_font_size = int(footer_text_font_size) * 1pt
-
   // Configure the page.
   // This poster defaults to 36in x 24in.
   set page(
