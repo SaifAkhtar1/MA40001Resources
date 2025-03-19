@@ -11,6 +11,7 @@ format:
     footer-emails: "myemail@dundee.ac.uk"
     footer-color: "4365e2"
     keywords: []
+    main-body-font-size: "22"
 ---
 
 # Abstract
